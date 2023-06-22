@@ -6,6 +6,7 @@
     background-color: #FFF;
     text-align: center;
     border-radius: 20px;
+    filter: drop-shadow(5px 10px 12px rgba(0, 0, 0, 0.32));
 }
 
 .card-title {
@@ -18,4 +19,19 @@
     font-size: 0.8rem;
     color: #4e4a53;
     margin-top: 0.5rem;
+}
+
+.image-drop-container {
+    margin: 2rem;
+    padding: 1rem;
+    border: dashed 2px #762cff;
+    border-radius: 10px;
+    background-color: #faf7ff;
+    text-align: center;
+}
+
+.image-drop-text {
+    font-size: 0.8rem;
+    color: #898296;
+    margin-top: 1rem;
 }
