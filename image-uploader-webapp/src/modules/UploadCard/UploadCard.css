@@ -1,0 +1,21 @@
+.card {
+    height: 55%;
+    width: 30%;
+    min-width: 400px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    color: #4e4a53;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,31 @@
+.uploader-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: #9e9aa7;
+}
+
+.footer-link {
+    color: #762cff;
+    text-decoration: none;
+}
+
+.card-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
