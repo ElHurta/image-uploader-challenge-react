@@ -1,10 +1,5 @@
 const db = {
-    imgs: [
-        {
-            id: 1,
-            url: 'http://localhost:3000/images/1617224790000--download.jpg',
-        }
-    ]
+    imgs: []
 }
 
 async function list(table) {
