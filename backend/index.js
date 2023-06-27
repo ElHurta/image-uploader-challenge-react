@@ -6,7 +6,7 @@ const router = require('./routes.js');
 
 const app = express();
 
-const whitelist = ['http://localhost:5173', 'https://image-uploader-challenge-react.vercel.app'];
+const whitelist = [`${config.frontend.frontend_url_local}`, `${config.frontend.frontend_url_prod}`];
 
 const corsOptions = {
     origin: (origin, callback) => {

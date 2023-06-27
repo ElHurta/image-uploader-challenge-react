@@ -2,6 +2,7 @@ const express = require('express');
 const response = require('./response.js'); 
 const multer = require("multer");
 const store = require('./dummy-db.js');
+const config = require('./config.js');
 
 const { nanoid } = require('nanoid');
 
@@ -11,12 +12,15 @@ const router = express.Router();
 const storageEngine = multer.diskStorage({
     destination: "./images",
     filename: (req, file, cb) => {
+
+        const frontend_url = config.frontend.frontend_url_prod ? config.frontend.frontend_url_prod : config.frontend.frontend_url_local;
+
         const imgId = nanoid(10);
         
         store.upsert('imgs', {
             id: imgId,
             type: file.mimetype.split('/')[1],
-            url: `http://localhost:3000/images/${imgId}`,
+            url: `${frontend_url}/images/${imgId}`,
         });
 
         cb(null, `${imgId}.${file.mimetype.split('/')[1]}`);
