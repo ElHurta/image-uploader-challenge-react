@@ -5,7 +5,7 @@ import LoadingBar from './components/LoadingBar'
 import './UploadCard.css'
 
 const API_URL = import.meta.env.VITE_API_URL
-const API_PORT = import.meta.env.VITE_API_PORT
+const API_PORT = import.meta.env.VITE_API_PORT || ''
 
 function UploadCard() {
 
@@ -37,7 +37,7 @@ function UploadCard() {
         const formData = new FormData();
         formData.append('', imgToUpload)
 
-        fetch(`${API_URL}:${API_PORT}/image-upload/`, {
+        fetch(`${API_URL}${API_PORT}/image-upload/`, {
             method: 'POST',
             body: formData,
         }).then(
@@ -52,7 +52,7 @@ function UploadCard() {
     }
 
     const copyLink = () => {
-        navigator.clipboard.writeText(`${API_URL}:${API_PORT}/images/${uploadedImgId}`)
+        navigator.clipboard.writeText(`${API_URL}${API_PORT}/images/${uploadedImgId}`)
         setCopyLinkButtonText('Copied!')
         setTimeout(() => setCopyLinkButtonText('Copy Link'), 1000)
     }
@@ -69,9 +69,9 @@ function UploadCard() {
                                 <div>
                                     <span className="material-symbols-outlined">check_circle</span>
                                     <h3 style={{marginTop: 0}}>Uploaded Succesfully!</h3>
-                                    <img className='uploaded-img' src={`${API_URL}:${API_PORT}/images/${uploadedImgId}`} alt="" />
+                                    <img className='uploaded-img' src={`${API_URL}${API_PORT}/images/${uploadedImgId}`} alt="" />
                                     <div className='img-link-container'>
-                                        <p>{`${API_URL}:${API_PORT}/images/${uploadedImgId}`}</p>
+                                        <p>{`${API_URL}${API_PORT}/images/${uploadedImgId}`}</p>
                                         <button
                                             onClick={copyLink}
                                             className='btn btn-primary'>
