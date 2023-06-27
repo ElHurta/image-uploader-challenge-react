@@ -40,6 +40,9 @@ function UploadCard() {
         fetch(`${API_URL}${API_PORT}/image-upload/`, {
             method: 'POST',
             body: formData,
+            headers : {
+                'Access-Control-Allow-Origin': 'https://img-uploader-service.onrender.com/*'
+            }
         }).then(
             res => res.json()
         ).then(
