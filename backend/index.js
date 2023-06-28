@@ -10,8 +10,6 @@ const whitelist = [config.frontend.frontend_url_local, config.frontend.frontend_
 
 const corsOptions = {
     origin: (origin, callback) => {
-        
-        console.log(whitelist);
         if (!origin) {
             callback(null, true);
             return;

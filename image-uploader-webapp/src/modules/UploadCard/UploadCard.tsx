@@ -41,7 +41,7 @@ function UploadCard() {
             method: 'POST',
             body: formData,
             headers : {
-                'Access-Control-Allow-Origin': 'https://img-uploader-service.onrender.com/*'
+                'Access-Control-Allow-Origin': `${API_URL}/*`
             }
         }).then(
             res => res.json()
