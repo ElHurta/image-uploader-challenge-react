@@ -6,16 +6,16 @@ const router = require('./routes.js');
 
 const app = express();
 
-const whitelist = [`${config.frontend.frontend_url_local}`, `${config.frontend.frontend_url_prod}`];
+const whitelist = [config.frontend.frontend_url_local, config.frontend.frontend_url_prod];
 
 const corsOptions = {
     origin: (origin, callback) => {
         
+        console.log(whitelist);
         if (!origin) {
             callback(null, true);
             return;
         }
-        console.log(whitelist);
         const exists = whitelist.some(domain => domain === origin);
         if (exists) {
             callback(null, true);
