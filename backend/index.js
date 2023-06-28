@@ -15,6 +15,7 @@ const corsOptions = {
             callback(null, true);
             return;
         }
+        console.log(whitelist);
         const exists = whitelist.some(domain => domain === origin);
         if (exists) {
             callback(null, true);
