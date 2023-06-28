@@ -33,11 +33,17 @@
 ## Overview
 
 ![screenshot](https://github.com/ElHurta/image-uploader-challenge-react/blob/main/assets/image-uploader-challenge-react-elhurta.vercel.app_.png?raw=true)
+![screenshot](https://github.com/ElHurta/image-uploader-challenge-react/blob/main/assets/image-uploader-challenge-react-elhurta.vercel.app_%20(1).png?raw=true)
+![screenshot](https://github.com/ElHurta/image-uploader-challenge-react/blob/main/assets/image-uploader-challenge-react-elhurta.vercel.app_%20(2).png?raw=true)
 
 - Where can I see your demo?
+  - You can test this solution here [Demo](https://image-uploader-challenge-react-elhurta.vercel.app/)
 - What was your experience?
+  - This challenge was harder than I expected but I enjoyed it a lot, I learned a lot about React and NodeJs. I also learned how to deploy a React App on Vercel and a NodeJs App on Render. Tried to keep it simple so I no used any CSS Framework or Buckets to store the images.
 - What have you learned/improved?
+  - I have never sent images from a frontend to a backend so I learned how to do it and how to store them. I also learned how to use Vite and how to deploy a React App on Vercel and a NodeJs App on Render.
 - Your wisdom? :)
+  - Don't try to make it perfect at once, try to make it work and then improve it.
 
 ### Built With
 
